@@ -5,5 +5,10 @@ div {
   color: blue;
 }
 #mybutton {
-  color: violet;
+  color: black;
+  background-color: yellow;
+}
+#dobindings {
+  color: black;
+  background-color: yellow;
 }
