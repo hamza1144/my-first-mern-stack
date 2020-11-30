@@ -14,7 +14,7 @@ window.onload = doBindings;
 
 function addToList(){
     var list = document.getElementById("list");
-    var input = document.getElementById("myinput").val;
+    var input = document.getElementById("myinput").value;
     var listItem = document.createTextNode(input);
     var newLi = document.createElement("li");
     newLi.appendChild(listItem);
