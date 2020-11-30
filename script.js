@@ -14,10 +14,14 @@ window.onload = doBindings;
 
 function addToList(){
     var list = document.getElementById("list");
-    var input = document.getElementById("myinput").value;
-    var listItem = document.createTextNode(input);
+    var inputText = document.getElementById("myinput").value;
+    var delButton = document.createElement("BUTTON");
+    delButton.innerHTML = "Delete";
+    delButton.onclick = handleDelete(event);
+    var listItem = document.createTextNode(inputText);
     var newLi = document.createElement("li");
     newLi.appendChild(listItem);
+    newLi.appendChild(delButton);
     list.appendChild(newLi);
 }
 
