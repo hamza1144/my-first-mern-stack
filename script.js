@@ -15,13 +15,14 @@ window.onload = doBindings;
 function addToList(){
     var list = document.getElementById("list");
     var inputText = document.getElementById("myinput").value;
-    var delButton = document.createElement("BUTTON");
-    delButton.innerHTML = "Delete";
-    delButton.onclick = handleDelete(event);
     var listItem = document.createTextNode(inputText);
     var newLi = document.createElement("li");
+
+    var delButton = document.createElement("BUTTON");
+    delButton.innerHTML = "Delete";
+    delButton.onclick = handleDelete;
+
     newLi.appendChild(listItem);
-    newLi.innerHTML = delButton.innerHTML;
     list.appendChild(newLi);
 }
 
