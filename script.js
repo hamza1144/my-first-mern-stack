@@ -9,3 +9,5 @@ function doBindings(){
     var mybtn = document.getElementById("mybutton");
     mybtn.onclick = update;
 }
+
+window.onload = doBindings;
