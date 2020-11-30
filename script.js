@@ -20,3 +20,9 @@ function addToList(){
     newLi.appendChild(listItem);
     list.appendChild(newLi);
 }
+
+function handleDelete(e){
+    var tag = e.target;
+    var li = tag.parentNode;
+    li.parentNode.removeChild(li);
+}
