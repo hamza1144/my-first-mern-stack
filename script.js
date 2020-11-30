@@ -7,5 +7,5 @@ function update(){
 
 function doBindings(){
     var mybtn = document.getElementById("mybutton");
-    mybtn.onclick = update();
+    mybtn.onclick = update;
 }
