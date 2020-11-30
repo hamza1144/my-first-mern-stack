@@ -21,7 +21,7 @@ function addToList(){
     var listItem = document.createTextNode(inputText);
     var newLi = document.createElement("li");
     newLi.appendChild(listItem);
-    newLi.appendChild(delButton);
+    newLi.innerHTML = delButton.innerHTML;
     list.appendChild(newLi);
 }
 
