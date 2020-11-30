@@ -11,3 +11,9 @@ function doBindings(){
 }
 
 window.onload = doBindings;
+
+function addToList(){
+    var list = document.getElementById("list");
+    var input = document.getElementById("myinput");
+    list.innerHTML = "<li>"+input.value+"</li>"
+}
