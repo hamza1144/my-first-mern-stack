@@ -1,0 +1,8 @@
+.recipe {
+  border-bottom: 2px dashed red;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+#getApiBtn {
+  margin-left: 50%;
+}
